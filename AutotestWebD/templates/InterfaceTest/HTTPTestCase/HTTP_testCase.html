@@ -1758,15 +1758,15 @@ showAllStepDiv();
 
 
                                                     var HTTPRequestText = "";
-
+                                                    var req_uri = result.step[i].uri;
                                                     var HTTPBodyContent = result.step[i].bodyContent;
                                                     var HTTPURL = result.step[i].url;
                                                     var HTTPParams = result.step[i].params;
                                                     var HTTPMethod = result.step[i].method;
                                                     if (HTTPParams == "未设置参数") {
-                                                        HTTPRequestText = HTTPMethod + " " + HTTPURL + " HTTP/1.1";
+                                                        HTTPRequestText =  HTTPMethod + " "  + req_uri + HTTPURL + " HTTP/1.1";
                                                     } else {
-                                                        HTTPRequestText = HTTPMethod + " " + HTTPURL + "?" + HTTPParams + " HTTP/1.1";
+                                                        HTTPRequestText =  HTTPMethod + " "  + req_uri + HTTPURL + "?" + HTTPParams + " HTTP/1.1";
                                                     }
                                                     for (var HTTPRequestKey in HTTPHeaderResult) {
                                                         HTTPRequestText = HTTPRequestText + "\n" + HTTPRequestKey + ":" + HTTPHeaderResult[HTTPRequestKey];
