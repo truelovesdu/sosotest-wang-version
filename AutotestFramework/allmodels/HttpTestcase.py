@@ -64,6 +64,7 @@ class HttpTestcase(CommonAttr):
         logging.debug("****************************************用例TESTCASE[%s]开始执行在环境[%s]执行人[%s]***********************************************" % (self.caseId,self.confHttpLayer.key,self.addBy))
         for i in range(0,len(self.stepTestcaseList)):
             #执行步骤前传递变量等
+            self.httpConfKey = self.confHttpLayer.key
             self.transferAttrsFrom1Pto2P(self,self.stepTestcaseList[i],isTrans_calledInterfaceRecurDict=True)
             self.stepTestcaseList[i].interfaceId = "%s-%s" % (self.caseId, self.stepTestcaseList[i].stepNum)
             # 执行步骤
