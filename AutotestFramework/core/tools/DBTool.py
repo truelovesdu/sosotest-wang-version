@@ -105,9 +105,9 @@ class DBTool(object):
                 cursor = self.__conn.cursor(pymysql.cursors.DictCursor)
             else:
                 cursor = self.__conn.cursor()
-            cursor.execute('SET NAMES utf8;')
-            # cursor.execute('SET CHARACTER SET utf8;')
-            cursor.execute('SET character_set_connection=utf8;')
+            cursor.execute('SET NAMES utf8')
+            # cursor.execute('SET CHARACTER SET utf8')
+            cursor.execute('SET character_set_connection=utf8')
             cursor.execute(sql)
             self.__conn.commit()
             data = cursor.fetchall()
@@ -133,9 +133,9 @@ class DBTool(object):
                 cursor = self.__conn.cursor(pymysql.cursors.DictCursor)
             else:
                 cursor = self.__conn.cursor()
-            cursor.execute('SET NAMES utf8;')
-            cursor.execute('SET CHARACTER SET utf8;')
-            cursor.execute('SET character_set_connection=utf8;')
+            cursor.execute('SET NAMES utf8')
+            cursor.execute('SET CHARACTER SET utf8')
+            cursor.execute('SET character_set_connection=utf8')
             res = cursor.execute(sql)
             self.__conn.commit()
             # 关闭数据库连接
@@ -160,9 +160,9 @@ class DBTool(object):
         try:
             self.connect()
             cursor = self.__conn.cursor()
-            cursor.execute('SET NAMES utf8;')
-            cursor.execute('SET CHARACTER SET utf8;')
-            cursor.execute('SET character_set_connection=utf8;')
+            cursor.execute('SET NAMES utf8')
+            cursor.execute('SET CHARACTER SET utf8')
+            cursor.execute('SET character_set_connection=utf8')
             curd_judge_string = sql_lower[0:6]
             #logging.debug(u"DBTool.py:get_effected_rows_count:curd_judge_string:[%s]" % curd_judge_string)
             if curd_judge_string == "select":
