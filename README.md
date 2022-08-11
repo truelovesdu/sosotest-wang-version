@@ -1,11 +1,11 @@
-# sosotest-松果版
+# sosotest-wang-自维护版本
 ## 补充说明
-> 注意：该版本为sosotest的初创开发者在松果出行进行的后续开发迭代维护的版本。<br>
+> 注意：该版本为sosotest的初创开发者独立维护的开发版本。<br>
 > 初始版本为lianjianTech/sosotest的commit[091863dee531b5726650bb63efd6f169267cbeb4]，在此基础上，进行了一些优化和缺陷修复，详情可以参考更新说明。<br>
-> 后续此版本先发布与gitee，再同步到github。
-> gitee地址：https://gitee.com/truelovesdu/sosotest-wang-version
-> github地址：https://github.com/truelovesdu/sosotest-wang-version
-> 文档：https://gitee.com/truelovesdu/sosotest-wang-version-docs
+> 后续此版本先发布与gitee，再同步到github。<br>
+> gitee地址：https://gitee.com/truelovesdu/sosotest-wang-version<br>
+> github地址：https://github.com/truelovesdu/sosotest-wang-version<br>
+> 文档：https://gitee.com/truelovesdu/sosotest-wang-version-docs<br>
 
 # sosotest自动化测试平台介绍
 sosotest自动化测试平台的功能：<br>
